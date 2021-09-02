@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/profile.scss'
 import user from '../data/user'
+import sary from '../img/webporfolio.png'
 
 function Profile() {
     let profile = user[0];
@@ -8,7 +9,7 @@ function Profile() {
         <div className="sidebar">
             <div className="sidebar__top">
                 <div className="pdc"></div>
-                <i className="material-icons sidebar__topAvatar"> account_circle </i>
+                <img src={sary} className="sidebar__topAvatar"/>
                 <h2>{profile.nom}</h2>
                 <h4>{profile.email}</h4>
             </div>

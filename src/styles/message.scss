@@ -1,5 +1,5 @@
 #page-content {
-    margin-top: 20px;
+    margin-top: 3px;
 }
 
 a {
@@ -273,7 +273,7 @@ a:not([href]):not([tabindex]):focus {
 
 @media (min-width:992px) {
     .page-container {
-        max-width: 1140px;
+        max-width: 1180px;
         margin: 0 auto
     }
 
@@ -311,7 +311,12 @@ a:not([href]):not([tabindex]):focus {
 }
 
 .no-wrap {
-    white-space: nowrap
+    white-space: nowrap;
+    float: right;
+}
+.ico-societe{
+    float: left;
+    margin-right: 25px!important;
 }
 
 .text-color {

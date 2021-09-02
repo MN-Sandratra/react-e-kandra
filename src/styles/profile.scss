@@ -1,5 +1,5 @@
 .sidebar {
-    margin-top: 50px;
+    margin-top: 60px;
     position: sticky;
     top: 90px;
     flex: 0.2;
@@ -31,6 +31,7 @@
   
   .sidebar__topAvatar {
     font-size: 20px;
+    height: 100px;
   }
   
   .sidebar__stats {
@@ -46,6 +47,8 @@
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
   }
   
   .sidebar__stat > p {
@@ -93,6 +96,9 @@
         cursor: pointer;
         color: black;
       }
+    p{
+        margin-bottom: 5px!important;
+    }
   }
   
   

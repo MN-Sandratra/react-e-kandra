@@ -51,17 +51,16 @@
 
 .avatar {
   padding: 20px;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: relative;
 
   img {
     border-radius: 50%;
-    transform: scale(1.6);
+    transform: scale(1.4);
     width: 50%;
-    height: 50%;
+    height: 80%;
     position: absolute;
-    left: 10;
   }
 }
 

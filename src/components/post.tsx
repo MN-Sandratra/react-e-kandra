@@ -46,8 +46,8 @@ function Post(props:IPost){
           </div>
           <img src={props.image} alt="" />
           <div className="post-footer">
-            <Link to={`/commentaire/${props.id}`}><span className="post-icon"><i className="far fa-comment"><BiComment/></i></span>{props.commentaire}</Link>
-            <span><span className="post-icon"><i className={liked?' heart-red fa-heart':'fa heart fa-lg'} onClick={LikePost}><FaHeart/> </i></span>{props.likes}</span>
+            <Link to={`/commentaire/${props.id}`}><span className="post-icon"><i className="far fa-comment"><BiComment/></i></span>{" "} {props.commentaire}</Link>
+            <span><span className="post-icon"><i className={liked?' heart-red fa-heart':'fa heart fa-lg'} onClick={LikePost}><FaHeart/> </i></span>{" "}{props.likes}</span>
             <i className="fa fa-external-link-alt"></i>
           </div>
         </div>

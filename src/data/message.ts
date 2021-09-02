@@ -49,19 +49,19 @@ export const message=[
     },
     {
         "id":1,
-        "sender":3,
+        "sender":5,
         "idconversation":5,
         "Message":"Salama tompoko oh inona no azoko atao ho anao"
     },{
         "id":1,
-        "sender":5,
+        "sender":6,
         "idconversation":6,
         "Message":"Salama tompoko oh inona no azoko atao ho anao"
     },
     {
         "id":1,
         "sender":10,
-        "idconversation":3,
+        "idconversation":5,
         "Message":"Mba afaka alefa mail ve le offre oh"
     }
 ]

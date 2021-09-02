@@ -35,16 +35,35 @@
   .feed__inputOptions {
     display: flex;
     justify-content: space-evenly;
+
+    .inputOption {
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 15px;
+        color: gray;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+    .bleu{
+        color: #70b5f9;
+    }
+    .orange{
+        color: #e7a33e;
+    }
+  
+    .gris{
+        color:#c0cbcd;
+    }
+    .vert{
+        color:#7fc15e;
+    }
   }
   
-  .inputOption {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    color: gray;
-    padding: 10px;
-    cursor: pointer;
-  }
+  
   
   .inputOption:hover {
     background-color: whitesmoke;
@@ -52,5 +71,9 @@
   }
   
   .inputOption > h4 {
-    margin-left: 5px;
+    margin-left: 7px;
+    font-size: 18px;
+    margin-top: 16px;
   }
+
+  

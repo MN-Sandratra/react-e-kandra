@@ -60,8 +60,11 @@ function Chat() {
                             <div className="direct-chat-infos clearfix">
                                 <span className={`direct-chat-name ${mes.sender === 10 ? 'float-right' : 'float-left'}`}>{mes.sender === 10 ? user.nom : localuser.nom}</span>
                             </div>
+                            <div className="messagecontent">
+                                
+                            </div>
                             {mes.sender===10?<img className="direct-chat-img" src={`${mypic}`} alt="message user image" />:
-                                <span className={`w-48 avatar ${localuser.color}`}>{localuser.avatar}</span>
+                                <span className={`w-48 avatar ${localuser.color} ico-societe`}>{localuser.avatar}</span>
                             }
                             
                             <div className="direct-chat-text">
