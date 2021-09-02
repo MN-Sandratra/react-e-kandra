@@ -3,6 +3,7 @@ import { BiPencil, BiSearch } from 'react-icons/bi';
 import { offres } from '../data/offre';
 import offre from '../interfaces/Ioffre';
 import Jobitems from './jobitems';
+import '../styles/job.scss';
 
 function Job() {
     let filter = ['Poste', 'Domaine', 'Diplome', 'Date'];
