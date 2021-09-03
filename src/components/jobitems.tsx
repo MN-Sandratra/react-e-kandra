@@ -38,7 +38,7 @@ function Jobitems(props:offre){
                     </td>
                 </tr>
                 </table>
-                <Link className="btn btn-send" to="">Envoyer votre candidature</Link>
+                <Link className="btn btn-send" to="demande">Envoyer votre candidature</Link>
               </div>
             </div>
         </div>

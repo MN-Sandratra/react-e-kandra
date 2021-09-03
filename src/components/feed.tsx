@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import '../styles/feed.scss'
 import Chat from './Chat';
 import Commentaire from './comment';
+import Demande from './demande';
 import Home from './home';
 import Job from './Job';
 import Message from './messages';
@@ -26,6 +27,9 @@ function Feed(){
                 </Route>
                 <Route path="/job">
                     <Job/>
+                </Route>
+                <Route path="/demande">
+                    <Demande/>
                 </Route>
             </Switch>
                 
