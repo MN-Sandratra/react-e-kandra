@@ -6,20 +6,25 @@ import Jobitems from './jobitems';
 import '../styles/job.scss';
 
 function Job() {
-    let filter = ['Poste', 'Domaine', 'Diplome', 'Date'];
-    const [selected,setSelected]=useState('');
+    let filter = ['Poste', 'Domaine', 'Diplome','Description', 'Date'];
+    const [selected, setSelected] = useState('');
     const [jobs, setJobs] = useState([...offres])
-    const [search,setSearch]=useState('');
-    const [currentJobs,setCurrentJobs]=useState([...offres])
-    const FilterJob=()=>{
-    const temps=jobs.filter((x)=>{
-        let searchs=search.trim().toLowerCase();
-        return x.diplome.toLowerCase().indexOf(searchs)!==-1 || !search
-    }
-    );
-    setCurrentJobs([...temps])
-    console.log('temps');
-    console.log(currentJobs);
+    const [search, setSearch] = useState('');
+    const [currentJobs, setCurrentJobs] = useState([...jobs])
+    const FilterJob = () => {
+        let searchs = search.trim().toLowerCase();
+        const temps = jobs.filter(x => {
+            return x.diplome.toLowerCase().indexOf(searchs) !== -1 || 
+            x.description.toLowerCase().indexOf(searchs)!== -1 ||
+            (""+x.date_limite.toLowerCase()).indexOf(search) !== -1||
+            x.domaine.toLowerCase().indexOf(search)!== -1 ||
+            x.poste.toLowerCase().indexOf(search)!== -1 ||
+            !search
+        }
+        );
+        setCurrentJobs([...temps])
+        console.log('temps');
+        console.log(currentJobs);
     }
     return (
         <div>
@@ -27,7 +32,7 @@ function Job() {
                 <div className="feed__input">
                     <i> <BiPencil /> </i>
                     <form>
-                        <input type="text" value={search} onChange={(event)=>setSearch(event.currentTarget.value)} onKeyUp={FilterJob}/>
+                        <input type="text" value={search} onChange={(event) => setSearch(event.currentTarget.value)} onKeyUp={FilterJob} />
                         <button type="submit">Rechercher</button>
                         <i><BiSearch /></i>
                     </form>
@@ -42,6 +47,7 @@ function Job() {
                 </div>
             </div>
             <div>
+                {console.log(currentJobs)}
                 {currentJobs.map(x =>
                     <Jobitems
                         date={x.date}

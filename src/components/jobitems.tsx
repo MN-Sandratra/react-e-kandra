@@ -4,6 +4,7 @@ import offre from '../interfaces/Ioffre';
 import '../styles/jobitems.scss'
 function Jobitems(props:offre){
     const[offre,setOffre]=useState(props)
+    useEffect(()=>setOffre(props))
     return (
         <div className="job-items">
             <div className="card border-primary">
