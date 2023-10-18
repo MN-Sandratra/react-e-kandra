@@ -15,7 +15,7 @@ const post = [
         likes:15,
         avatar:male2,
         image:work,
-        date: "sep 14, 2021",
+        date: "sep 14, 2023",
         isLiked:false
     },
     {
@@ -26,29 +26,29 @@ const post = [
         likes:36,
         avatar:saka,
         image:front,
-        date: "Jul 26, 2021",
+        date: "Jul 26, 2023",
         isLiked:false
     },
     {
         id: 3,
-        text: `Mba jereko kely lesy ty projet ty fa tsy de milay ahh`,
+        text: `Viens voir mon petit projet`,
         displayName: "Diane Mely",
         username: "Koto",
         likes:17,
         avatar:female,
         image:pc,
-        date: "Feb 4, 2021",
+        date: "Feb 4, 2023",
         isLiked:false
     },
     {
         id: 4,
-        text: "Mba mandray anjara kely zaa",
+        text: "une petite contribution",
         displayName: "Sylvio",
         username: "sylvano",
         likes:56,
         avatar:bot,
         image:back,
-        date: "Jan 30, 2020",
+        date: "Jan 30, 2022",
         isLiked:false
     },
 ]

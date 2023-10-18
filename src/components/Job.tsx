@@ -7,7 +7,6 @@ import '../styles/job.scss';
 
 function Job() {
     let filter = ['Poste', 'Domaine', 'Diplome','Description', 'Date'];
-    const [selected, setSelected] = useState('');
     const [jobs, setJobs] = useState([...offres])
     const [search, setSearch] = useState('');
     const [currentJobs, setCurrentJobs] = useState([...jobs])

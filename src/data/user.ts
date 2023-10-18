@@ -10,7 +10,7 @@ const users = [
         username:"Sandratra",
         email: "mn.sandratra@gmail.com",
         competence: "Developpeur Informatique",
-        classe: "IMTICIA 5",
+        classe: "Master II GL",
         picture:pic,
         contact: "0324612431",
         connaissance: ["HTML", "CSS", "Javascript", "TypeScript", "React", "Angular", "Node Js"]
